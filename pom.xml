@@ -11,7 +11,7 @@
       <configuration>
         <archive>
           <manifest>
-            <mainClass>haproxy_analyser.HAPLogAnalyser</mainClass>
+            <mainClass>com.vinay.hapanalyser.main.HAPLogAnalyser</mainClass>
           </manifest>
         </archive>
         <descriptorRefs>

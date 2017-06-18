@@ -12,11 +12,11 @@ public class HAPLogAnalyser {
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
 	    try{ 
-	     System.out.println("File to be analysed");
+	     System.out.println("File(s) to be analysed-In case of multiple file please provide the comma separated file name");
 	     String[] filesToBeAnalysed = sc.next().split(",");
-	     System.out.println("Pattern to be analysed");
+	     System.out.println("URL to be analysed");
 	     String urlToBeAnalsyed = sc.next();
-	     System.out.println("Expected response time");
+	     System.out.println("Expected response time - This will provide the results of how many request were withing this reponse time");
 	     String expectedResponseTime = sc.next();
 	     HAPLogsParser hapLogsParser = new HAPLogsParser(filesToBeAnalysed, urlToBeAnalsyed, expectedResponseTime);
 	     hapLogsParser.startProcessingAndPrintData();
